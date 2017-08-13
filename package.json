@@ -1,0 +1,12 @@
+{
+  "name": "",
+  "version": "",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-ruby-sass": "^2.1.1"
+  },
+  "dependencies": {
+    "node-sass": "^4.5.3"
+  }
+}

@@ -1,0 +1,24 @@
+//=============== VIEW MORE BUTTON ===============
+.more
+  display: flex
+  text-align: center
+  justify-content: space-around
+  align-items: center
+  padding-bottom: 2rem
+
+  a
+    background-color: $primary-color
+    border: none
+    color: $secondary-color
+    padding: 15px 32px
+    text-align: center
+    text-decoration: none
+    display: inline-block
+    font-size: $primary-font-size
+    border-radius: .8rem
+    margin-top: 2rem
+    font-weight: bold
+
+    &:hover
+      background-color: $action-color
+      +hover($primary-color, underline)

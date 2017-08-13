@@ -1,0 +1,57 @@
+//=============== SEARCH BAR ===============
+.search
+  display: flex
+  justify-content: space-around
+  flex-direction: row
+  align-items: center
+  background-image: url("../img/marvel.jpg")
+  background-repeat: no-repeat
+  background-position: center
+  height: 40vh
+
+  form
+    position: relative
+    input
+      width: calc(90vw - 3.7rem)
+      height: 5vh
+      padding-right: 3.7rem
+
+    p
+      background-color: $secondary-color
+      color: $primary-color
+      font-size: $primary-font-size
+      width: inherit
+      padding: .5rem
+      text-align: center
+
+    button
+      margin-left: -16px
+      height: 3.4rem
+      width: 3.7rem
+      background-image: url("../img/search.png")
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 3.4rem 3.4rem
+      position: absolute
+      padding: 0
+      right: 0
+      bottom: 0
+      border: 0
+
+@media screen and (min-width:426px)
+  .search
+    form
+      p
+        text-align: left
+        font-size: 2rem
+        width: 42%
+      input
+        width: 70vw
+        height: 7vh
+        font-size: 2rem
+        border: 0
+        padding: 0
+      button
+        height: 7vh
+        width: 4.6rem
+        background-color: transparent

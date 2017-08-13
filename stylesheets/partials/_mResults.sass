@@ -1,0 +1,82 @@
+#resultsContainer
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+  padding-top: 1rem
+  h1
+    background-color: $primary-color
+    color: $secondary-color
+    align-self: flex-start
+    padding: 1.5rem
+    font-size: 2.5rem
+    flex-wrap: wrap
+    align-items: stretch
+
+article
+  padding-top: 1rem
+  padding-bottom: 2rem
+  padding-left: 5vw
+  padding-right: 5vw
+  img
+    width: 90vw
+  p
+    color: $secondary-color
+    background-color: $primary-color
+    font-size: $primary-font-size
+    padding: 1.5rem
+    font-family: $font
+    text-decoration: UPPERCASE
+
+@media screen and (min-width:426px)
+  header
+    padding-left: 5%
+    padding-right: 5%
+  h1
+    background-color: $primary-color
+    color: $secondary-color
+    padding: 1.5rem
+    font-size: 2.5rem
+
+  #resultsContainer
+    padding-left: 5%
+    padding-right: 5%
+    .results
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-evenly
+      padding-top: 1rem
+      article
+        width: 45%
+        height: 30.1rem
+        align-self: auto
+        display: flex
+        box-sizing: border-box
+        padding: 0
+        margin-bottom: 2rem
+        img
+          width: 55%
+
+        p
+          background-color: $primary-color
+          color: $secondary-color
+          padding: 1.5rem
+          width: 45%
+          font-size: 1.4rem
+          font-family: $font
+
+@media screen and (min-width:1024px)
+  #resultsContainer
+    padding-left: 5%
+    padding-right: 5%
+    .results
+      article
+        flex-direction: column
+        height: auto
+        width: 30%
+        img
+          width: 100%
+          height: calc(100% - 15%)
+        p
+          width: auto
+          height: 10%
+          font-size: 1.8rem
